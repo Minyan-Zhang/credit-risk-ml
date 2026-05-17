@@ -154,13 +154,4 @@ python src/04_feature_importance.py   # Step 4: 特征重要性
 
 ---
 
-## 简历写法参考
 
-```
-基于机器学习的信贷违约风险评估系统    2025.11 - 2026.1
-• 基于 Kaggle Give Me Some Credit 数据集（15万条），构建用户违约风险预测模型（二分类）
-• 完成数据清洗与特征工程（缺失值处理、变量分箱/WOE编码、构造7个衍生特征）
-• 使用 SMOTE 解决 14:1 样本不平衡问题，分别训练 Logistic Regression、Random Forest、XGBoost
-• XGBoost 模型 AUC 达 0.85，Recall 0.62，优于基线 Logistic Regression（AUC 0.78）
-• 分析特征重要性，识别高风险用户关键因素：历史逾期次数、信用使用率、负债率、月收入水平
-```
