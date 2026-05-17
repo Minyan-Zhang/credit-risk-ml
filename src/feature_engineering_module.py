@@ -58,7 +58,7 @@ def engineer_features(df: pd.DataFrame) -> pd.DataFrame:
     df["HasOverdue"] = (df["TotalOverdueTimes"] > 0).astype(int)
     df["AgeGroup"] = pd.cut(
         df["age"], bins=[0, 30, 40, 50, 60, 100], labels=[0, 1, 2, 3, 4]
-    ).astype(int)
+    ).astype("object").fillna(-1).astype(int)
     df["DebtPerAccount"] = df["DebtRatio"] / (df["NumberOfOpenCreditLinesAndLoans"] + 1)
     print(f"[特征工程] 新增特征 7 个，当前总特征数：{df.shape[1]}")
     return df
